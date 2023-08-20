@@ -13,6 +13,17 @@ return {
     "catppuccin/nvim",
   },
   {
+    "aspeddro/pandoc.nvim",
+    -- name = "vim_pandoc"
+    -- event = "User AstroFile",
+    event = "BufEnter *.md",
+    -- config = function() require("vim-pandoc").setup() end,
+    opts = {},
+  },
+  {
+    "vim-pandoc/vim-pandoc-syntax",
+  },
+  {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
